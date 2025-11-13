@@ -49,15 +49,35 @@ Linux_Environment/
 
 ## ▶️ Start the Environment
 
-### Build and start:  
+### Before starting the container, you must download or clone this repository.
+
+#### 📥 Option 1 — Clone the repository (recommended)
+```bash
+git clone https://github.com/YOUR_USERNAME/Creating-Linux-Environment-with-Docker.git
+cd Creating-Linux-Environment-with-Docker
+```
+
+#### 📦 Option 2 — Download as ZIP
+
+Go to the repository page on GitHub
+
+Click Code → Download ZIP
+
+Extract the ZIP file
+
+Open a terminal inside the extracted folder  
+
+### ▶️ Start the Docker Environment
+
+#### Build and start:  
 ```bash
 docker-compose up --build
 ```  
-### Start without rebuilding:  
+#### Start without rebuilding:  
 ```bash
 docker-compose up
 ```  
-### Detached mode:  
+#### Detached mode:  
 ```bash
 docker-compose up -d
 ```
@@ -69,15 +89,15 @@ docker exec -it n8n-cli-env /bin/bash
 You will now be inside a full Linux environment.  
 
 ## 📜 Running Automation Scripts
-Bash script:
+### Bash script:
 ```bash
 /scripts/myscript.sh
 ```
-Python script:
+### Python script:
 ```bash
 python3 /scripts/myscript.py
 ```
-n8n workflow by ID:
+### n8n workflow by ID:
 ```bash
 n8n execute --id=5
 ```
