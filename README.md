@@ -67,6 +67,7 @@ Extract the ZIP file
 
 Open a terminal inside the extracted folder  
 
+
 ### ▶️ Start the Docker Environment
 
 #### Build and start:  
