@@ -66,7 +66,7 @@ If the container is running:
 ```bash
 docker exec -it n8n-cli-env /bin/bash
 ```
-You will now be inside a full Linux environment.
+You will now be inside a full Linux environment.  
 
 ## 📜 Running Automation Scripts
 Bash script:
@@ -81,23 +81,23 @@ n8n workflow by ID:
 ```bash
 n8n execute --id=5
 ```
-
+  
 ## 🧹 Stopping the Environment
 ```bash
 docker-compose down
 ```
-
+  
 ## 🧩 Customization
 
 You can extend this environment by adding additional packages in the Dockerfile, such as:
 
-PostgreSQL client
+- PostgreSQL client
 
-Extra Python libraries
+- Extra Python libraries
 
-Yarn, PNPM, or global Node packages
+- Yarn, PNPM, or global Node packages
 
-System utilities
+- System utilities
 
 Just modify the Dockerfile and rebuild the image.  
 
